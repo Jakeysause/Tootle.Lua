@@ -119,7 +119,7 @@ function Library:CreateWindow(Config, Parent)
 	local function ChangeColor(Color)
 		Config.Color = Color
 		for i, v in pairs(Library.ColorTable) do
-			if v.BackgroundColor3 ~= Color3.fromRGB(50, 50, 50) then
+			if v.BackgroundColor3 ~= Color3.fromRGB(170, 170, 255) then
 				v.BackgroundColor3 = Color
 			end
 		end
