@@ -3,7 +3,7 @@ local Library = {}
 
 function Library:GetColor(color, table)
     table = table or false
-    if (color.R == nil) then return Color3.fromRGB(170, 170, 255) end
+    if (color.R == nil) then return Color3.fromRGB(51, 163, 141) end
 
     local ColorRed = math.round(color.R * 255)
     local ColorGreen = math.round(color.G * 255)
@@ -30,7 +30,7 @@ end
 
 function Library:CreateWindow(title, color)
     title = title or "spermware"
-    color = color and Library:GetColor(color) or Color3.fromRGB(170, 170, 255)
+    color = color and Library:GetColor(color) or Color3.fromRGB(51, 163, 141)
 
     -- Window Main
     local WinTypes = {}
@@ -58,7 +58,7 @@ function Library:CreateWindow(title, color)
 
     core.Name = "core"
     core.Parent = BracketV2
-    core.BackgroundColor3 = Color3.fromRGB(170, 170, 255)
+    core.BackgroundColor3 = Color3.fromRGB(51, 163, 141)
     core.BorderColor3 = Color3.fromRGB(8, 8, 8)
     core.Position = UDim2.new(0.156000003, 0, 0.140000001, 0)
     core.Size = UDim2.new(0, 540, 0, 531)
@@ -72,7 +72,7 @@ function Library:CreateWindow(title, color)
 
     title_18.Name = "title"
     title_18.Parent = outlinecore
-    title_18.BackgroundColor3 = Color3.fromRGB(170, 170, 255)
+    title_18.BackgroundColor3 = Color3.fromRGB(51, 163, 141)
     title_18.BackgroundTransparency = 1.000
     title_18.Position = UDim2.new(0.0185185187, 0, 0.00188323914, 0)
     title_18.Size = UDim2.new(0, 521, 0, 23)
