@@ -669,7 +669,7 @@ function Library:CreateWindow(Config, Parent)
 				local function UpdateColor()
 					Colorpicker.Color.BackgroundColor3 = Color3.fromHSV(ColorTable.Hue,ColorTable.Saturation,ColorTable.Value)
 					Pallete.GradientPallete.BackgroundColor3 = Color3.fromHSV(ColorTable.Hue,1,1)
-					Pallete.Input.InputBox.PlaceholderText = "RGB: " .. math.round(Colorpicker.Color.BackgroundColor3.R* 255) .. "," .. math.round(Colorpicker.Color.BackgroundColor3.G * 255) .. "," .. math.round(Colorpicker.Color.BackgroundColor3.B * 255)
+					Pallete.Input.InputBox.PlaceholderText = "RGB: " .. math.round(Colorpicker.Color.BackgroundColor3.R* 170) .. "," .. math.round(Colorpicker.Color.BackgroundColor3.G * 170) .. "," .. math.round(Colorpicker.Color.BackgroundColor3.B * 255)
 					Callback(Colorpicker.Color.BackgroundColor3)
 				end
 
@@ -736,7 +736,7 @@ function Library:CreateWindow(Config, Parent)
 					local Hue, Saturation, Value = Color:ToHSV()
 					Colorpicker.Color.BackgroundColor3 = Color3.fromHSV(Hue,Saturation,Value)
 					Pallete.GradientPallete.BackgroundColor3 = Color3.fromHSV(Hue,1,1)
-					Pallete.Input.InputBox.PlaceholderText = "RGB: " .. math.round(Colorpicker.Color.BackgroundColor3.R* 255) .. "," .. math.round(Colorpicker.Color.BackgroundColor3.G * 255) .. "," .. math.round(Colorpicker.Color.BackgroundColor3.B * 255)
+					Pallete.Input.InputBox.PlaceholderText = "RGB: " .. math.round(Colorpicker.Color.BackgroundColor3.R* 170) .. "," .. math.round(Colorpicker.Color.BackgroundColor3.G * 170) .. "," .. math.round(Colorpicker.Color.BackgroundColor3.B * 255)
 					ColorTable = {
 						Hue = Hue,
 						Saturation = Saturation,
